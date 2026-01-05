@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template <typename eiei>
+void mySwap(eiei &,eiei &);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +33,9 @@ int main(){
 	return 0;
 }
 
+template <typename eiei>
+void mySwap(eiei &a, eiei &b){
+	eiei x = a;
+	a = b;
+	b = x;
+}
